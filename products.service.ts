@@ -6,34 +6,32 @@ import { Injectable } from '@angular/core';
 export class ProductsService {
 
   constructor() { }
-
   getProducts() {
     return [
       {
-    ProductID: 'P-101',
-    ProductName: 'Logitech Mouse',
-    Description: '6 Button Mechanical Mouse',
-    price: '899',
+        id: 'P-101',
+        name: 'Logitech Mouse',
+        description: '6 Button Mechanical Mouse',
+        price: 899.0
       },
       {
-        ProductID: 'P-102',
-        ProductName: 'JBL BT SPEAKER',
-        Description: 'waterproof radio 360 surround',
-        price: '1099',
+        id: 'P-102', 
+        name: 'JBL BT Speaker', 
+        description: 'Waterproof Radio 360 Surround', 
+        price: 1099.0
       },
-      {
-        ProductID: 'P-103',
-    ProductName: 'mechanical keyboard',
-    Description: 'hot swappable rgb backlit',
-    price: '2395',
+      { 
+        id: 'P-103', 
+        name: 'Mechanical Keyboard', 
+        description: 'Hot-swappable RGB Backlit', 
+        price: 2395.0 
       },
-      {
-        ProductID: 'P-104',
-    ProductName: 'Oculus Meta',
-    Description: 'all in one gaming headset',
-    price: '22,450',
-      }
-      
-    ]
+      { 
+        id: 'P-104', 
+        name: 'Oculus Meta', 
+        description: 'All-in-one Gaming Headset', 
+        price: 22450.0 },
+    ];
   }
 }
+
