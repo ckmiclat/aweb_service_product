@@ -1,0 +1,36 @@
+
+<h2> EMPLOYEE LIST</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>FIRST NAME</th>
+    <th>LASTNAME</th>
+    <th>EMAIL</th>
+  </tr>
+<tr *ngFor="let employee of employees">
+  <td> {{ employee.id }}</td>
+  <td> {{ employee.firstname }}</td>
+  <td> {{ employee.lastname }}</td>
+  <td> {{ employee.email }}</td>
+</tr>
+</table>
+
+<h3> PRODUCT LIST</h3>
+<table>
+  <tr>
+    <th>ProductID</th>
+    <th>ProductName</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+<tr *ngFor="let product of products">
+  <td> {{ product.id }}</td>
+  <td> {{ product.ProductName }}</td>
+  <td> {{ product.Description }}</td>
+  <td> {{ product.Price }}</td>
+</tr>
+</table>
+
+<router-outlet />
+
+
